@@ -23,13 +23,13 @@ Anyway, I hope this script is helpful to someone else down the line. If you're l
 
 In time I hope to make it more robust and sophisticated as I've got time and the desire to. But, for now it's serving the purpose that originally moved me to do this in the first place.
 
-# You're going to need to set your execution policy.
+## You're going to need to set your execution policy.
 
 If you're not familiar with setting your execution policy peep some info here [setting execution policy | MSDN Microsoft:  https://msdn.microsoft.com/powershell/reference/5.1/Microsoft.PowerShell.Core/about/about_Execution_Policies](https://msdn.microsoft.com/powershell/reference/5.1/Microsoft.PowerShell.Core/about/about_Execution_Policies) to help you get up and running.
 
 I've added an additional PowerShell script with example scripts for setting execution policy to help get ya started.
 
-# Resource Links
+## Resource Links
 
 Links that helped me along the way. This list is reverse chronological order from how I found 'em. If you're new to this as I am/was, start at the bottom then work your way towards to top of the list:
 
