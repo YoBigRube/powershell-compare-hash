@@ -25,11 +25,13 @@ In time I hope to make it more robust and sophisticated as I've got time and the
 
 # You're going to need to set your execution policy.
 
-If you're not familiar with setting your execution policy peep some info here [setting execution policy](https://msdn.microsoft.com/powershell/reference/5.1/Microsoft.PowerShell.Core/about/about_Execution_Policies) to help you get up and running.
+If you're not familiar with setting your execution policy peep some info here [setting execution policy | MSDN Microsoft:  https://msdn.microsoft.com/powershell/reference/5.1/Microsoft.PowerShell.Core/about/about_Execution_Policies](https://msdn.microsoft.com/powershell/reference/5.1/Microsoft.PowerShell.Core/about/about_Execution_Policies) to help you get up and running.
 
 I've added an additional PowerShell script with example scripts for setting execution policy to help get ya started.
 
-### Links that helped me along the way. This list is reverse chronilogical order from how I found 'em. If you're new to this as I am/was, start at the bottom then work your way towards to top of the list:
+# Resource Links
+
+Links that helped me along the way. This list is reverse chronological order from how I found 'em. If you're new to this as I am/was, start at the bottom then work your way towards to top of the list:
 
 * [Choosing a git repo license Choose an open source license](https://choosealicense.com/)
 * [Multiple Write-Host to add new lines Don't do that #3 by Steve Renard](http://powershell-guru.com/dont-do-that-3-multiple-write-host-to-add-new-lines/)
@@ -48,6 +50,7 @@ I've added an additional PowerShell script with example scripts for setting exec
 * [Signing your scripts by JuanPablo Jofre](https://msdn.microsoft.com/powershell/reference/5.1/Microsoft.PowerShell.Core/about/about_signing)
 * [About PowerShell Execution Policies by JuanPablo Jofre](https://msdn.microsoft.com/powershell/reference/5.1/Microsoft.PowerShell.Core/about/about_Execution_Policies)
 * [Windows PowerShell, Securing the Shell by Don Jones](https://technet.microsoft.com/en-us/library/3f7e8023-b0f4-4225-bdba-26c23c8e4913)
+* [Setting ExecutionPolicy by JuanPablo Jofre](https://msdn.microsoft.com/powershell/reference/5.1/Microsoft.PowerShell.Core/about/about_Execution_Policies)
 * [How to use the PowerShell 1.0: A Beginners Guide.](https://blogs.technet.microsoft.com/shawnt/2007/12/17/how-to-use-the-powershell-1-0-a-beginners-guide/)
 * [Gurnec HashCheck | gitHub repo](https://github.com/gurnec/HashCheck/releases/tag/v2.4.0)
 * [Get-FileHash by JuanPablo Jofre, info about the cmdlet](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.utility/Get-FileHash)
