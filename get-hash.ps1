@@ -2,7 +2,8 @@
 #Get-FileHash "C:\example-directory-name\file-name.exe" -Algorithm SHA256
 
 # Add file name with path to file here:
-$file = "C:\example-directory-name\file-name.exe" # *NOTE: Change this value and add the correct path to your file here.
+#$file = "C:\example-directory-name\file-name.exe" # *NOTE: Change this value and add the correct path to your file here.
+$file = "C:path\to\file\file-name-here" # *NOTE: Change this value and add the correct path to your file here.
 
 # Define the Algorithm Type here (SHA1, MD5, SHA256, SHA384, SHA512). We'll pass this value into the 'Get-FileHash' command:
 $hashType = "SHA256"
@@ -13,8 +14,9 @@ $hashParams = Get-FileHash $file -Algorithm $hashType
 # Capture the above 3 values ($file, $hashType, $hashParams) and store in variable '$hashSourcefile:
 $hashsourcefile = $hashParams
 
-# Paste the hash value provided by the software vendor here. Usually provided on same page as file download. 
+# Paste the hash value provided by the software vendor here. Usually provided on same page as file download.
 # We will compare the computed value of the file to this hash value from the vendor
+#$providedHash = "00000000000000000000000000000000000000000000000000000000000000000" # *NOTE: change this value, add the correct hash.
 $providedHash = "00000000000000000000000000000000000000000000000000000000000000000" # *NOTE: change this value, add the correct hash.
 
 # We will Compare the two hashe values below and see if they match:
@@ -37,7 +39,7 @@ $hashMessageDetails = @"
 Get-FileHash: $hashsourcefile
 Provided hash value: $providedHash
 File's hash value  : $hashsourcefile
-"@               
+"@
 
 # IF the Hashes are equal:
 if ( $hashsourcefile.Hash -eq $providedHash ) {
@@ -49,14 +51,14 @@ if ( $hashsourcefile.Hash -eq $providedHash ) {
 }
 # IF the Hashes are different:
 else {
-    # Results message - with Red text 
+    # Results message - with Red text
 
     # Value of 'Get-FileHash' cmdlet. Value is an object containing (Algorithm used, hash value, path to file) - printed in White text:
     #Write-Host "Get-FileHash:" $hashsourcefile -ForegroundColor White
 
     # Provided hash value
     #write-Host "Provided hash value:" $providedHash
-    
+
     # File hash value
     #Write-Host "File's hash value  :" $hashsourcefile.Hash
 

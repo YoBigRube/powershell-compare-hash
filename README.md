@@ -1,6 +1,18 @@
 # powershell-compare-hash
 Windows Powershell Script for Comparing Hash Values
 
+
+## USING THIS TOOL:
+
+1. Edit the PowerShell file named 'get-hash.ps1': you'll be editing two different variable's values.
+1. For the variable named ```$file```: Update its value with the name & path to the file you want to compare hash values for. (eg. C:\example-directory-name\file-name.exe)
+1. For the variable named ```$providedHash```: Update its value with the hash value provided by the vendor or download source. (eg. Will be a long alphanumeric string)
+1. Save the changes to your file.
+1. Open up a terminal window in Windows PowerShell
+1. Within your PowerShell terminal window you will run the script by referencing its file name. Type ```'get-hash.ps1'```
+1. Hit 'Enter' - This will run the script to compare the hash values.
+1. If the hash values match you will get a success message. If they do not match you will get a message that informs the values do NOT match.
+
 ## A little bit about why I created this script and what it's for
 
 I've got a ton of other repos, but this is actually my 1st public MIT licensed repository.
